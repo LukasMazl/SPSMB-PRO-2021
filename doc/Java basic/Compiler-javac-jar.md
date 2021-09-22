@@ -10,27 +10,9 @@ Javac je nástroj, který čte třídy a definice rozhraní, které jsou napsan�
 
 #### Příklad
 ```
-   javac @path1\options @path2\sourcefiles @path3\classes @path4\
+   javac @path1\options @path2\sourcefiles @path3\classes @path4\argfiles
 ```
 
 #### Obrázek
 
-```
-                  ┌-------------------┐
-                  |   Java Program    |
-                  └-------------------┘
-                            |
-                            |
-                            |
-                            ▼
-                  ┌-------------------┐
-                  |       Javac       |
-                  |     (Compile)     |
-                  └-------------------┘
-                          _/|\_
-                        _/  |  \_
-                      _/    |    \_
-                    _/      |      \_
-                  _/        |        \_
-                  
-```
+https://media.geeksforgeeks.org/wp-content/uploads/20190521075104/Screenshot-2019-05-21-at-7.50.21-AM.png
