@@ -32,7 +32,7 @@ public class MathUtils {
      * @return
      */
     public static boolean isEven(int number) {
-        return number % 2 == 2;
+        return number % 2 == 0;
     }
 
     /**
