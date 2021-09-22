@@ -15,3 +15,7 @@
     - 1 x 2
     - 0 x 1
 - Výstup výše uveden je výstupem programu a popisuje jak by program měl fungovat. Algorimizatní část je popsána v kódu.
+
+## Bonusová úloha
+
+Vytvořte metodu pro výpočet druhé odmocniny z přirozeného čísla (Babylonská metoda).
