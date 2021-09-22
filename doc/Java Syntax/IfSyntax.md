@@ -6,5 +6,9 @@
 - například
 
 int a = 0;
-if()
+if(a=1){ // podmínka která má být splněna 
+sout ("a se rovná jedna"); // úkon který má udělat když je podmínka pravnivá
+}else { // jinak
+sout ("a se nerovna 1") //úkon který má udělat když je podmínka pravnivá
+}
 ```
