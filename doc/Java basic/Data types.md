@@ -9,7 +9,7 @@ float	4 bytes
 double	8 bytes	
 boolean	1 byte	
 char	2 bytes	
-Non - primitive data types
+Abstract data type
 String
 
 long myLong = 5L;
