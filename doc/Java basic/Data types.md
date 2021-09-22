@@ -6,7 +6,7 @@ int	4 bytes
 long	8 bytes	
 float	4 bytes	
 double	8 bytes	
-boolean	1 bit	
+boolean	1 byte	
 char	2 bytes	
 
 int myNum = 5;               // Integer 
