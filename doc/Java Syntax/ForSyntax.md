@@ -1,6 +1,6 @@
 
 # Autor - Tadeáš Tondl
-# For Syntax
+For Syntax
 = loop, pro ktery vime kolikrat se bude opakovat.
 ```java
 example:
