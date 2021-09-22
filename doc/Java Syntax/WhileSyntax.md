@@ -26,5 +26,5 @@ Cyklus se bude opakovat, dokud bude i stále menší než 5
 Cyklus je zde nekonečný, jelikož hodnota je stále true
 
     while(true){    
-        System.out.println("infinitive while loop");    
+        System.out.println("Nekonečná smyčka while");    
     }    
