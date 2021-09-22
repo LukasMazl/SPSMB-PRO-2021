@@ -1,4 +1,4 @@
-# Autor Šimon
+# Autor Jakub Šimon
 
 While je podobná smyčka jako for, s tím rozdílem, že se opakuje tak dlouho, dokud je stav true.
 
