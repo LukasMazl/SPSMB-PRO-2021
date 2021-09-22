@@ -6,8 +6,8 @@ While je podobná smyčka jako if, s tím rozdílem, že se opakuje tak dlouho, 
 
 ## Cyklus se bude opakovat, dokud bude i stále menší než 5
 
-int i = 0;
-while (i < 5) {
-  System.out.println(i);
-  i++;
-}
+- int i = 0;
+- while (i < 5) {
+  - System.out.println(i);
+  - i++;
+- }
