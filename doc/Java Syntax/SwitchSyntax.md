@@ -2,9 +2,10 @@
 - na rozdíl od if může mít n spustitelných částí (case)
 - používá datové typy byte, short, char, int, enum, string
 - tělo se nazývá switch block
-- pro uzavření switche se používá break (zastaví testování dalších částí)
 - pokud není nalezena schoda požije se default
 - každý case musí mít vlastní hodnotu, pokud mají dvě stejnou compilátor vypíše error
+- příkaz break přeruší switch a ukončí ho
+- pokud není break v kódu tak veškeré case od pravdivého budou vykonány včetně s pravdivým
 
 # Syntaxe:
     switch(expression)
