@@ -14,10 +14,10 @@ While je podobná smyčka jako for, s tím rozdílem, že se opakuje tak dlouho,
 
  Cyklus se bude opakovat, dokud bude i stále menší než 5
 
-''''java
+'''javascript
 int i = 0;
 while (i < 5) {
   System.out.println(i);
   i++;
 }
-''''
+'''
