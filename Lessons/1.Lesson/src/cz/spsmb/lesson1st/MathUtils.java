@@ -58,4 +58,13 @@ public class MathUtils {
         return true;
     }
 
+    /**
+    *
+    * @param number
+    *
+    * @return
+    */
+    public static int randomNumber(int min, int max) {
+        return (int) min + (Math.random() * (max - min));
+    }
 }
