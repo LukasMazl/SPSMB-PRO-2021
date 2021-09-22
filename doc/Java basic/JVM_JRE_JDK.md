@@ -1,16 +1,16 @@
 # Autor Kraus, Stefan, Adam
 
-#JVM 
+## JVM 
   Virtual machine přes který lze spouštět kompilované java aplikace na každé platformě
   Výhody:
     - Multiplatformní
   Nevýhody:
     - Je pomalejší
-#JRE
+## JRE
   Zkompiluje java aplikace do java bytcode, který lze poté spustit přes JVM
   Souvisí s JDK, jedno bez druhého nelze
   Obsahuje runzé libraries
-#JDK
+## JDK
   Nástroje pro vývoj javy např:
     - javac - kompiluje java source code do java bytcodu
     - jar - kompresuje soubory do jednoho jar souboru
