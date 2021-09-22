@@ -4,14 +4,14 @@ While je podobná smyčka jako for, s tím rozdílem, že se opakuje tak dlouho,
 
 ## Výhody
 
-Hodí se na nějaký např. generátor, apod.
-Nemusíme díky while cyklu pořád psát ten samý kód znovu a znovu
+- Hodí se na nějaký např. generátor, apod.
+- Nemusíme díky while cyklu pořád psát ten samý kód znovu a znovu
 
 
 ## Nevýhody
 
-Mnohdy pokračuje do nekonečna
-Má menší využití než for
+- Mnohdy pokračuje do nekonečna
+- Má menší využití než for
 
 ## Příklad
 
