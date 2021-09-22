@@ -1,4 +1,5 @@
 # Autor - Šubrt
+```java
 byte 1 byte	
 short	2 bytes	
 int	4 bytes	
@@ -13,4 +14,4 @@ float myFloatNum = 5.99f;    // Floating point number
 char myLetter = 'D';         // Character
 boolean myBool = true;       // Boolean
 String myText = "Hello";     // String
-
+```
