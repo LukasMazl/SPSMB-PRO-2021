@@ -1,9 +1,9 @@
 
 # Autor - Tadeáš Tondl
-```java
 # For Syntax
 = loop, pro ktery vime kolikrat se bude opakovat.
 example:
+```java
 for (int i = 0; i < 6; i++) {
   int x = x + 5
   }
