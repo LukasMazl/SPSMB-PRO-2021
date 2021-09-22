@@ -15,4 +15,5 @@ Javac je nástroj, který čte třídy a definice rozhraní, které jsou napsan�
 
 #### Obrázek
 
-https://media.geeksforgeeks.org/wp-content/uploads/20190521075104/Screenshot-2019-05-21-at-7.50.21-AM.png
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190521075104/Screenshot-2019-05-21-at-7.50.21-AM.png">
