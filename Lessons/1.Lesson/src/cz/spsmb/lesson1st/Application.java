@@ -1,8 +1,10 @@
 package cz.spsmb.lesson1st;
 
+import static cz.spsmb.lesson1st.MathUtils.solveQuadraticEquation;
+
 public class Application {
 
     public static void main(String[] args) {
-        System.out.println(1);
+        solveQuadraticEquation(1,8,15);
     }
 }

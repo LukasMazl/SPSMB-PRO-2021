@@ -1,4 +1,4 @@
-package cz.spsmb.lesson1st;
+package cz.spsmb.lesson4th.utils;
 
 /**
  * Prvni knihovna s matematickymi operacemi. V tato trida umoznuje pocitat zakladni matematicke ulohy zname
