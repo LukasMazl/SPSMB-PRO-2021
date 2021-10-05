@@ -15,4 +15,4 @@
      javac - kompiluje java source code do java bytcodu
      jar - kompresuje soubory do jednoho jar souboru
 
-![][http://www.herongyang.com/JVM/JVM-Java-Virtual-Machine-Programming-Process.jpg]
+![Virtual machine](http://www.herongyang.com/JVM/JVM-Java-Virtual-Machine-Programming-Process.jpg)
