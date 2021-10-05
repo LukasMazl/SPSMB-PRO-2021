@@ -1,6 +1,4 @@
-package cz.spsmb.lesson4th.utils;
-
-import cz.spsmb.lesson5th.utils.MathUtils;
+package cz.spsmb.utils;
 
 public class ArrayUtils {
 
@@ -15,7 +13,7 @@ public class ArrayUtils {
     public static int[] generate(int size, int min, int max) {
         int[] array = new int[size];
         for (int i = 0; i < array.length; i++) {
-            array[i] = cz.spsmb.lesson5th.utils.MathUtils.randomNumber(min, max);
+            array[i] = MathUtils.randomNumber(min, max);
         }
         return array;
     }

@@ -1,6 +1,4 @@
-package cz.spsmb.lesson4th.utils;
-
-import cz.spsmb.lesson5th.utils.MathUtils;
+package cz.spsmb.lesson5th.utils;
 
 public class ArrayUtils {
 
