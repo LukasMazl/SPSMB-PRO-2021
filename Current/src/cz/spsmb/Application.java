@@ -1,6 +1,6 @@
 package cz.spsmb;
 
-import cz.spsmb.utils.ArrayUtils;
+import cz.spsmb.lesson5th.utils.ArrayUtils;
 
 public class Application {
 
