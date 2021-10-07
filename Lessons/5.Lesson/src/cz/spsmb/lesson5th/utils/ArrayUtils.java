@@ -13,7 +13,7 @@ public class ArrayUtils {
     public static int[] generate(int size, int min, int max) {
         int[] array = new int[size];
         for (int i = 0; i < array.length; i++) {
-            array[i] = cz.spsmb.lesson5th.utils.MathUtils.randomNumber(min, max);
+            array[i] = MathUtils.randomNumber(min, max);
         }
         return array;
     }
@@ -33,6 +33,14 @@ public class ArrayUtils {
                 System.out.print(", ");
             }
             System.out.print(item);
+        }
+        System.out.println("]");
+    }
+
+    public static void print(int[][] array) {
+        System.out.println("[");
+        for (int[] subArray : array) {
+            print(subArray);
         }
         System.out.println("]");
     }

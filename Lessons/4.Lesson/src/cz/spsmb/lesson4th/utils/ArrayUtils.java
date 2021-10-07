@@ -1,7 +1,5 @@
 package cz.spsmb.lesson4th.utils;
 
-import cz.spsmb.lesson5th.utils.MathUtils;
-
 public class ArrayUtils {
 
     /**

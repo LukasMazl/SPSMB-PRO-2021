@@ -180,4 +180,14 @@ public class MathUtils {
                     "determinant %d is less then 0.", quadratic, linear, constant, determinant));
         }
     }
+
+    public static int[] fibonacci(int length) {
+        int[] sequence = new int[length + 2];
+        sequence[0] = 1;
+        sequence[1] = 1;
+        for (int i = 2; i < length + 2; i++) {
+            sequence[i] = sequence[i - 2] + sequence[i - 1];
+        }
+        return sequence;
+    }
 }
