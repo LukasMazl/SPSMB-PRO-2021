@@ -38,7 +38,7 @@ public class Application {
         }
 
         System.out.println(Arrays.toString(array));
-        System.out.println(Arrays.toString(MathUtils.fibonacci(1)));
+        System.out.println(Arrays.toString(MathUtils.fibonacci(21)));
     }
 }
 
