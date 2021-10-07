@@ -83,4 +83,9 @@ public class ArrayUtils {
         }
         return array;
     }
+
+    public static int[][] generate(int width, int height, int min, int max) {
+
+        return null;
+    }
 }
