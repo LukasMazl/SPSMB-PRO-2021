@@ -1,4 +1,4 @@
-package cz.spsmb.lesson5th.utils;
+package src.cz.spsmb.lesson5th.utils;
 
 /**
  * Prvni knihovna s matematickymi operacemi. V tato trida umoznuje pocitat zakladni matematicke ulohy zname
@@ -180,4 +180,22 @@ public class MathUtils {
                     "determinant %d is less then 0.", quadratic, linear, constant, determinant));
         }
     }
+
+    public static int[] fibonacci (int length) {
+        if (length < 2)   {
+            System.err.println("Velikost musi byt vetsi nez 1");
+            return null;
+        }
+
+        int[] arr = new int[length];
+
+        arr[1] = 1;
+        for (int i = 2; i < arr.length; i++) {
+            arr[i] += arr[i-2] + arr[i-1];
+        }
+
+        return arr;
+    }
+
+
 }
