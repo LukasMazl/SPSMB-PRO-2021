@@ -1,4 +1,5 @@
-package cz.spsmb.lesson5th.utils;
+package cz.spsmb.lesson6th.utils;
+
 
 public class ArrayUtils {
 
@@ -115,9 +116,48 @@ public class ArrayUtils {
     public static int[] generateSortedArray(int size, int min, int max) {
         int[] array = new int[size];
         for (int i = 0; i < array.length; i++) {
-            min = MathUtils.randomNumber(min, max);
+            min = cz.spsmb.lesson6th.utils.MathUtils.randomNumber(min, max);
             array[i] = min;
         }
         return array;
+    }
+
+    public static void quickSort(int[] array) {
+        quickSort(array, 0, array.length - 1);
+    }
+
+    private static void quickSort(int[] array, int fromIndex, int toIndex) {
+        if(fromIndex >= toIndex || toIndex >= array.length) {
+            return;
+        }
+
+        int pivotIndex = fromIndex;
+        int pivot = array[pivotIndex];
+        int moreThen = toIndex;
+        int it = 0;
+        for (int i = fromIndex + 1; i <= moreThen; i++) {
+            if(pivot < array[i]) {
+                while (array[moreThen] > pivot && moreThen > i) {
+                    moreThen--;
+                }
+                swap(array, moreThen, i);
+                if(moreThen > i) {
+                    it++;
+                }
+            } else {
+                it++;
+            }
+        }
+
+        pivotIndex = fromIndex + it;
+        swap(array, fromIndex, pivotIndex);
+        quickSort(array, fromIndex, pivotIndex - 1);
+        quickSort(array, pivotIndex + 1, toIndex);
+    }
+
+    public static void swap(int[] array, int a, int b) {
+        int c = array[a];
+        array[a] = array[b];
+        array[b] = c;
     }
 }

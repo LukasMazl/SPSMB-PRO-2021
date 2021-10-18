@@ -1,6 +1,6 @@
-package current.cz.spsmb;
+package cz.spsmb.lesson6th;
 
-import current.cz.spsmb.utils.ArrayUtils;
+import cz.spsmb.lesson6th.utils.ArrayUtils;
 
 public class Application {
 
