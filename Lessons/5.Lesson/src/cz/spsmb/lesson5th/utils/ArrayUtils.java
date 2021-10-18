@@ -1,5 +1,7 @@
 package cz.spsmb.lesson5th.utils;
 
+import cz.spsmb.lesson1st.MathUtils;
+
 public class ArrayUtils {
 
     /**
@@ -16,6 +18,14 @@ public class ArrayUtils {
             array[i] = MathUtils.randomNumber(min, max);
         }
         return array;
+    }
+
+    public static int[][] generate(int width, int height, int min, int max) {
+        int[][] array2d = new int[height][width];
+        for (int i = 0; i < array2d.length; i++) {
+            array2d[i] = generate(width, min, max);
+        }
+        return array2d;
     }
 
     /**
@@ -51,6 +61,14 @@ public class ArrayUtils {
                 System.out.print(", ");
             }
             System.out.print(item);
+        }
+        System.out.println("]");
+    }
+
+    public static void print(int[][] array) {
+        System.out.print("[");
+        for (int[] subArray : array) {
+            print(subArray);
         }
         System.out.println("]");
     }

@@ -1,16 +1,15 @@
-package current.cz.spsmb;
+package cz.spsmb;
 
-import current.cz.spsmb.utils.ArrayUtils;
+import cz.spsmb.lesson5th.utils.ArrayUtils;
 
 public class Application {
 
     public static void main(String[] args) {
-        for(int i = 0; i < 10; i++) {
-            int[] array = ArrayUtils.generate(i + 5, 0, 100);
-            ArrayUtils.print(array);
-            ArrayUtils.quickSort(array);
-            ArrayUtils.print(array);
-        }
+        int[] array = ArrayUtils.generate(10, 0, 10);
+        cz.spsmb.lesson5th.utils.ArrayUtils.print(array);
+        int sum = cz.spsmb.lesson5th.utils.ArrayUtils.sum(array);
+        System.out.println("Sum of given list: " + sum);
+        double avg = ArrayUtils.avg(array);
+        System.out.println("Avg of given list: " + avg);
     }
-
 }
