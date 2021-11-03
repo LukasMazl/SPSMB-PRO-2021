@@ -28,23 +28,6 @@ public class ArrayUtils {
         return array2d;
     }
 
-    /**
-     * Metoda vygeneruje pole s random hodnotou.
-     *
-     * @param width - Sirka pole
-     * @param height - Vyska pole
-     * @param min - Minimální hodnota
-     * @param max - Maximální hodnota
-     * @return - Pole s náhodnými hodnoty
-     */
-    public static int[][] generate(int width, int height, int min, int max) {
-        int[][] array = new int[height][width];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = generate(width, min, max);
-        }
-        return array;
-    }
-
 
     /**
      * Výpis jednorozměrného pole do terminálu
@@ -61,14 +44,6 @@ public class ArrayUtils {
                 System.out.print(", ");
             }
             System.out.print(item);
-        }
-        System.out.println("]");
-    }
-
-    public static void print(int[][] array) {
-        System.out.print("[");
-        for (int[] subArray : array) {
-            print(subArray);
         }
         System.out.println("]");
     }
