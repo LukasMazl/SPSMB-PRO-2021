@@ -17,7 +17,7 @@ Domácí úkol platí pro všechny! Úkol devzdejte do tohoto repositáře formo
 **Zadání**: Vytvořte aplikaci, která bude reprezentovat hraní rulety v Kasinu.
 Jako uživatel na začátku mám nějaký obnos (ponechám na Vás). Jako uživatel můžu zvoli, jakou částku si přeji vsadit a na jakou barvu si chci vsadit. Lze sázet pouze na červenou a černou barvu. Pokud vsadím na červenou a padne červená, tak mi je vrácen můj vklad 2x (tj. pokud vsadím 10kč, dostanu 20kč). Hra končí v případě, kdy uživatel chce skočit a jít pryč, nebo když mu dojdou peníze a nepůjčí mu už ani ruská mafie.
 
-Pokud chce domácí ukol vylepšit a dostat rovnou z něho za 1, tak přidejte k DU i AI, která bude simulovat hráče, který hraje ruletu. Spravny vysledek je takovy, kdy neni mozne hrat ruletu do ,,nekonecna" protoze staticky vzdy musite prohrat vsechny penize. Na to kasína vsázejí! :)
+Pokud chce domácí ukol vylepšit a dostat rovnou z něho za 1, tak přidejte k DU i AI, která bude simulovat hráče, který hraje ruletu. Spravny vysledek je takovy, kdy neni mozne hrat ruletu do ,,nekonecna" protoze staticky vzdy musite prohrat vsechny penize. Na to kasína sázejí! :)
 
 Je potřeba, aby na ruletě byla všechna políčka (i nula, která má zelenou barvu).
 
