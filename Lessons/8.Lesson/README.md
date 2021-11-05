@@ -21,8 +21,9 @@ Pokud chce domácí ukol vylepšit a dostat rovnou z něho za 1, tak přidejte k
 
 Je potřeba, aby na ruletě byla všechna políčka (i nula, která má zelenou barvu).
 
-Odevzdáno jako soubor: Ruleta.java
-Měl by být spustitelný pomocí:
+Odevzdáno jako soubor: Ruleta.java  
+Měl by být spustitelný pomocí:  
 ```
 java -Dfile.encoding=UTF8 Ruleta.java
 ```
+Též dostupné na: https://github.com/OtanCZ/Ruleta
