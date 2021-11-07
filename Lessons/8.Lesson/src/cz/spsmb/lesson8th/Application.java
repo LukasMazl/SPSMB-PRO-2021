@@ -3,6 +3,7 @@ package cz.spsmb.lesson8th;
 import cz.spsmb.lesson8th.model.Point;
 import cz.spsmb.lesson8th.model.Point2d;
 import cz.spsmb.lesson8th.model.Point3d;
+import cz.spsmb.lesson8th.model.Rulete;
 
 public class Application {
 
@@ -12,7 +13,7 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        Point pointA = new Point2d(1,5);
+       /* Point pointA = new Point2d(1,5);
         Point pointB = new Point2d(2,5);
 
         System.out.println(pointA.getVector(pointB));
@@ -24,6 +25,8 @@ public class Application {
                 trueCount++;
             }
         }
-        System.out.println(trueCount/(double) totalIteractions);
+        System.out.println(trueCount/(double) totalIteractions);*/
+        Rulete rulete = new Rulete(1000);
+        rulete.aiPlay();
     }
 }
