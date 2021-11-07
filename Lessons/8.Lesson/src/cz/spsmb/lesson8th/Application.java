@@ -1,29 +1,83 @@
 package cz.spsmb.lesson8th;
 
-import cz.spsmb.lesson8th.model.Point;
-import cz.spsmb.lesson8th.model.Point2d;
-import cz.spsmb.lesson8th.model.Point3d;
+import java.util.Scanner;
 
 public class Application {
-
-    public static boolean chance(double per) {
-        double number = Math.random();
-        return number < per;
-    }
+    public static Scanner sc = new Scanner(System.in);
+    public static int userMoney = 1000;
+    public static int userMoneyBet = 0;
+    public static String userColorBet = "";
 
     public static void main(String[] args) {
-        Point pointA = new Point2d(1,5);
-        Point pointB = new Point2d(2,5);
+        boolean gameIsRunning = true;
 
-        System.out.println(pointA.getVector(pointB));
+        while (gameIsRunning) {
+            System.out.println("Enter your desired color and the amount you want to be, your current balance is: " + userMoney);
+            userColorBet = sc.nextLine();
+            userMoneyBet = Integer.parseInt(sc.nextLine());
 
-        int trueCount = 0;
-        int totalIteractions = 10000;
-        for(int i = 0; i < totalIteractions; i++) {
-            if (chance(0.50)) {
-                trueCount++;
+            checkMoneyInput();
+            checkColorInput();
+
+            if (rollRoulette()){
+                userMoney += userMoneyBet;
+            } else {
+                userMoney -= userMoneyBet;
+            }
+
+            if (userMoney == 0) {
+                System.out.println("You've lost the game");
+                gameIsRunning = false;
             }
         }
-        System.out.println(trueCount/(double) totalIteractions);
+    }
+
+    public static boolean chanceGen(double percentile){
+        int num = (int) (Math.random() * 100);
+        return num < percentile;
+    }
+
+    public static void checkMoneyInput() {
+        if (userMoneyBet > userMoney || userMoneyBet <= 0){
+            System.out.println("Enter a valid amount, your current balance is: " + userMoney);
+            userMoneyBet = sc.nextInt();
+            checkMoneyInput();
+        }
+    }
+
+    public static void checkColorInput() {
+        switch (userColorBet){
+            case "red":
+            case "black":
+                break;
+            default:
+                System.out.println("Enter valid color");
+                userColorBet = sc.nextLine();
+                checkColorInput();
+        }
+    }
+
+    public static String getColor(){
+        if (chanceGen(47.4)){
+            return "red";
+        }
+        return "black";
+    }
+
+    public static boolean rollRoulette(){
+        String winningColor = getColor();
+
+        if (chanceGen(5.2)){
+            System.out.println("GREEN has fallen, Casino wins");
+            return false;
+        }
+
+        System.out.println(winningColor + " is the winning color");
+        if (winningColor.equals(userColorBet)){
+            System.out.println("You've won the round");
+            return true;
+        }
+        System.out.println("You've lost the round");
+        return false;
     }
 }
