@@ -27,6 +27,7 @@ public class Application {
         }
         System.out.println(trueCount/(double) totalIteractions);*/
         Rulete rulete = new Rulete(1000);
-        rulete.aiPlay();
+       // rulete.aiPlay(); // <- ai plays the game
+        rulete.Init(); // <- player plays
     }
 }
