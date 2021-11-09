@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SPSMB-PRO-2021" options="--add-modules java.base" />
-    </option>
-=======
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
       <module name="Minecraft-mod" target="1.8" />
     </bytecodeTargetLevel>
->>>>>>> origin/main
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SPSMB-PRO-2021" options="--add-modules java.base" />
+    </option>
   </component>
 </project>

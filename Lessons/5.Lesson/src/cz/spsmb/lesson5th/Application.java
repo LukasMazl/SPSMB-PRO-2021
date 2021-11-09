@@ -25,4 +25,4 @@ public class Application {
         ArrayUtils.print(SortUtils.bogoSort(new int[]{2, 3, 1, 5, 4}));
         ArrayUtils.print(MathUtils.fibonacci(10));
     }
-}
+}   
