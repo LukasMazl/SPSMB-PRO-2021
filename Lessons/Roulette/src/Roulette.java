@@ -33,6 +33,13 @@ public class Roulette {
         return picked.equals(generated);
     }
 
+    public static boolean endGame () {
+        System.out.println("Do you wish to stop playing?");
+        String input = scan.nextLine();
+        if (input.equals("yes") || input.equals("y")) return true;
+        return false;
+    }
+
     private static void game(int cash) {
         int bet;
         String pickedColor, generatedColor;
@@ -50,19 +57,57 @@ public class Roulette {
 
         System.out.println("Current balance: " + cash);
 
-        if (cash <= 0) return;
-        System.out.println("Do you wish to stop playing?");
-        String input = scan.nextLine();
-        if (input.equals("yes") || input.equals("y")) return;
+        if (cash <= 0 || endGame()) return;
+
         game(cash);
     }
 
     public static void game() {
-        int cash = 10_000;
-        game(cash);
+        game(10_000);
+    }
+
+    private static void autoGame (int cash, int round) {
+        int bet = cash < 2 ? 1 : cash / 2;
+        round++;
+        System.out.println("Round " + round);
+        System.out.println("Current balance: " + cash);
+        String casinoColor = generateColor(CHANCE);
+        String AICOlor = generateColor(50);
+
+        System.out.println("Your color is " + AICOlor);
+        System.out.println("Casinos color is " + casinoColor);
+
+        if (casinoColor.equals(AICOlor)) {
+            System.out.println("You won");
+            cash += bet;
+        }
+        else {
+            System.out.println("You lost");
+            cash -= bet;
+        }
+
+        if (cash <= 0) return;
+        autoGame(cash, round);
+    }
+
+    public static void autoGame () {
+        autoGame(10_000, 0);
     }
 
     public static void main(String[] args) {
+        System.out.println("1 - AI");
+        System.out.println("2 - YOU");
+        int input = Integer.parseInt(scan.nextLine());
+        if (input == 1) {
+            autoGame();
+            System.exit(1);
+        } else if (input == 2) {
+            game();
+            System.exit(1);
+        } else {
+            main(null);
+        }
+
         game();
     }
 }
