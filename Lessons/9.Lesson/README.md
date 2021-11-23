@@ -9,4 +9,4 @@ Uvedené body níže vypracujte do projektu Current.
 
 Žádný domácí úkol a ani úloha nebyla.
 
-![Freeman](../Others/img/freeman.gif "Freeman")
+![Freeman](../../Others/img/freeman.gif "Freeman")
