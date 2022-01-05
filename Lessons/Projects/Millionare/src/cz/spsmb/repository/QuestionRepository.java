@@ -5,17 +5,12 @@ import cz.spsmb.model.Question;
 public interface QuestionRepository {
 
     /**
-     * Returns random question
+     * Returns only a one question
      *
-     * @return random question
+     * @return question
      */
     Question getOneQuestion();
 
-    /**
-     *
-     *
-     * @return
-     */
-    boolean hasNextQuestion();
 
+    boolean hasNextQuestion();
 }

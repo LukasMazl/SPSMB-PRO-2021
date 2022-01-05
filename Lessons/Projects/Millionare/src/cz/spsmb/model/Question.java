@@ -8,10 +8,6 @@ public class Question {
     private List<String> options;
     private String correctAnswer;
 
-    public Question() {
-
-    }
-
     public Question(String question, List<String> options, String correctAnswer) {
         this.question = question;
         this.options = options;
