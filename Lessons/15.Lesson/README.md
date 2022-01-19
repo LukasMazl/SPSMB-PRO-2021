@@ -1,3 +1,3 @@
 # 15. Hodina
 
-TODO Převodní jednotek
+TODO Převodník jednotek
