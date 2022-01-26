@@ -1,4 +1,4 @@
-# 16.Hodina
+# 16.Lesson
 
 (Řešte zadání ve dvojici)
 
