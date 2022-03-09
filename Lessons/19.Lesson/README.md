@@ -10,5 +10,5 @@ Vytvořte metodu, která na vstupu dostane seznam bodů, které tvoří n-úheln
 
 ![Konvexní n-úhelník](https://kdm.karlin.mff.cuni.cz//diplomky/cabri/kapitoly/ctyruhelniky/ctyruhelnik-zaklad.png)
 
-[Convex Hull](https://iq.opengenus.org/gift-wrap-jarvis-march-algorithm-convex-hull)
-[WIKI](https://cs.wikipedia.org/wiki/Konvexn%C3%AD_mnoho%C3%BAheln%C3%ADk)
+ - [Convex Hull](https://iq.opengenus.org/gift-wrap-jarvis-march-algorithm-convex-hull)
+ - [WIKI](https://cs.wikipedia.org/wiki/Konvexn%C3%AD_mnoho%C3%BAheln%C3%ADk)
