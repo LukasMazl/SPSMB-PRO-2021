@@ -5,8 +5,8 @@ Pokračování v zadání z 18.Lesson
 # Bonusová úloha
 
 Vytvořte metodu, která na vstupu dostane seznam bodů, které tvoří n-úhelník. 
-  - Metoda vrátí True, pokud zadaný seznam bodů tvoří KONVEXNÍ n-uhelník.
-  - Metoda vratí False, pokud zadaný seznam bodů tvoří NEKONVEXNÍ n-uhelník.
+  - Metoda vrátí True, pokud zadaný seznam bodů tvoří KONVEXNÍ 4-úhelník.
+  - Metoda vratí True, pokud zadaný seznam bodů tvoří KONVEXNÍ n-uhelník.
 
 ![Konvexní n-úhelník](https://kdm.karlin.mff.cuni.cz//diplomky/cabri/kapitoly/ctyruhelniky/ctyruhelnik-zaklad.png)
 
