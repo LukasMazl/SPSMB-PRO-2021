@@ -13,3 +13,7 @@ Výpisy můžou být libovolné a konfigurovatelné. Logovat by se určitě měl
  - Konzole
  - Soubor
  - Kombinace (Konzole + Soubor)
+
+## Příklad
+Podobné zadání již řešeí knihovna Log4j, ze které se můžeme inspirovat
+ - https://www.tutorialspoint.com/log4j/log4j_sample_program.htm
