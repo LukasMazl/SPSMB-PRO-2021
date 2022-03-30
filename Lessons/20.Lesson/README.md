@@ -1,4 +1,5 @@
 # 20. Lesson
-Pokračování v práci na CurrencyWatcher
+Pokračování na CurrencyWatcher
 
 ## Bonusová úloha
+
