@@ -18,6 +18,7 @@ Vše co bylo před tím.
  - Základní komponenty -
 
 ## Kolekce
+- Colletion
 - Map -
   - HashMap -
 - List -
