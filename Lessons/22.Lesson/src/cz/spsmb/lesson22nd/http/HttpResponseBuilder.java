@@ -1,4 +1,4 @@
-package cz.spsmb.lesson21st;
+package cz.spsmb.lesson22nd.http;
 
 import java.util.HashMap;
 import java.util.Map;

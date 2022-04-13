@@ -8,17 +8,21 @@ import java.net.Socket;
 
 public class Application {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         ServerSocket serverSocket = new ServerSocket(80);
         Socket socket = serverSocket.accept();
 
         String httpRequest = readHttpRequest(socket.getInputStream());
         System.out.println(httpRequest);
 
-        HttpResponseBuilder httpResponseBuilder = new HttpResponseBuilder();
+        HttpResponseBuilder httpResponseBuilder = new HttpResponseBuilder()
+                .setHttpVersion("HTTP/1.1")
+                .setStatusCode(200)
+                .addHeaderParam("Content-type", "text/html")
+                .setBody("<html><body><h1>Hello</h1></body></html>");
 
+        System.out.println(httpResponseBuilder.build());
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(socket.getOutputStream());
-        // TODO ADD HTTP RESPONSE BUILDER
         outputStreamWriter.write(httpResponseBuilder.build());
         outputStreamWriter.flush();
         outputStreamWriter.close();
