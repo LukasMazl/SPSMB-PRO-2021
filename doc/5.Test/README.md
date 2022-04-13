@@ -1,5 +1,7 @@
 # Z čeho bude písemná práce
 Vše co bylo před tím.
+ - https://github.com/LukasMazl/SPSMB-PRO-2021/tree/main/doc/1.Test
+ - https://github.com/LukasMazl/SPSMB-PRO-2021/tree/main/doc/2.Test
 
 ## OOP
  -  Jaké jsou základní vlastnosti OOP? - 
