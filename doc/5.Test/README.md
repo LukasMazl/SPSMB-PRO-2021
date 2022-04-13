@@ -49,6 +49,7 @@ Vše co bylo před tím.
 
 ## Socket a aplikační vrstva
 - K čemu slouží socket? - 
+- Kdo vytváří socket? -
 - Jaký je rozdíl mezi TCP protokolem a HTTP protokolem? -
 - Pomocí čeho získáte příchozí data? -
 
