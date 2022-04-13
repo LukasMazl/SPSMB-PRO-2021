@@ -21,6 +21,14 @@ Vše co bylo před tím.
 - Collection
 - Map -
   - HashMap
+  - Iterace
+ ```java
+   for(Map.Entry<String, String> entry: map.entrySet()) {
+     System.out.println("key: " + entry.getKey() + ", value: " + entry.getValue());
+   }
+ 
+ ```
+ 
 - List -
   - ArrayList
   - LinkedList
