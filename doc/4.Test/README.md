@@ -1,0 +1,1 @@
+# Skupinová práce CurrencyWatcher
