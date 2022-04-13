@@ -18,9 +18,9 @@ Vše co bylo před tím.
  - Základní komponenty -
 
 ## Kolekce
-- Colletion
+- Collection
 - Map -
-  - HashMap -
+  - HashMap
 - List -
   - ArrayList
   - LinkedList
