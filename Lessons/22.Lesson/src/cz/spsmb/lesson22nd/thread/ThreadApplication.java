@@ -3,22 +3,21 @@ package cz.spsmb.lesson22nd.thread;
 public class ThreadApplication {
 
     public static void main(String[] args) throws InterruptedException {
-        CounterThread counterThread0 = new CounterThread();
-        CounterThread counterThread1 = new CounterThread();
-        CounterThread counterThread2 = new CounterThread();
-        CounterThread counterThread3 = new CounterThread();
+        CounterThread thread0 = new CounterThread();
+        CounterThread thread1 = new CounterThread();
+        CounterThread thread2 = new CounterThread();
+        CounterThread thread3 = new CounterThread();
 
-        counterThread0.start();
-        counterThread1.start();
-        counterThread2.start();
-        counterThread3.start();
+        thread0.start();
+        thread1.start();
+        thread2.start();
+        thread3.start();
 
-        counterThread0.join();
-        counterThread1.join();
-        counterThread2.join();
-        counterThread3.join();
+        thread0.join();
+        thread1.join();
+        thread2.join();
+        thread3.join();
 
-        System.out.println(CounterThread.count);
-
+        System.out.println(CounterThread.counter);
     }
 }

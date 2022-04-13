@@ -15,6 +15,5 @@ public class HttpApplication {
             HttpThread httpThread = new HttpThread(socket);
             httpThread.start();
         }
-
     }
 }

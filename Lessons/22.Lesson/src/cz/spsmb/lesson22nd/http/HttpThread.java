@@ -17,15 +17,16 @@ public class HttpThread extends Thread {
     @Override
     public void run() {
         try {
-            System.out.println("Thread name " + Thread.currentThread().getName());
             String httpRequest = readHttpRequest(socket.getInputStream());
             System.out.println(httpRequest);
-
+            // TODO Domaci ukol
+            // String filePath = getFilePath(httpRequest);
+            // String fileContent = getFileContent(filePath);
             HttpResponseBuilder httpResponseBuilder = new HttpResponseBuilder()
                     .setHttpVersion("HTTP/1.1")
                     .setStatusCode(200)
-                    .addHeaderParam("Content-type", "text/html")
-                    .setBody("<html><body><h1>Hello</h1></body></html>");
+                    .addHeaderParam("Content-type", "text/html");
+            //        .setBody(fileContent);
 
             System.out.println(httpResponseBuilder.build());
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(socket.getOutputStream());

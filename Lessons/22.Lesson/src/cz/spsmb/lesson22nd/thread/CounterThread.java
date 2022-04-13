@@ -2,14 +2,14 @@ package cz.spsmb.lesson22nd.thread;
 
 public class CounterThread extends Thread {
 
-    public static int count = 0;
+    public static int counter = 0;
 
     @Override
     public void run() {
-        for (int i = 0; i < 500_000; i++) {
-            synchronized (CounterThread.class) {
-                count = count + 1;
-            }
-        }
+       for(int i = 0; i < 5_000_000; i++) {
+           synchronized (CounterThread.class) {
+               counter = counter + 1;
+           }
+       }
     }
 }
