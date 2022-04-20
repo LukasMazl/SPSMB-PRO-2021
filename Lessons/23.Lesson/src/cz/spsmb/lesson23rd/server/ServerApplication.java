@@ -13,8 +13,9 @@ public class ServerApplication {
 
     public static void readObjectFromInput(InputStream inputStream) throws IOException, ClassNotFoundException {
         ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-        while (objectInputStream.available() < 0) {
-        }
+       /* while (objectInputStream.available() < 0) {
+            // aktivní čekání / busy waiting
+        }*/
 
         Message message = (Message) objectInputStream.readObject();
         System.out.println(message);
