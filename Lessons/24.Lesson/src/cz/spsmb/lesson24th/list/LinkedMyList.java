@@ -1,39 +1,86 @@
 package cz.spsmb.lesson24th.list;
 
-public class LinkedMyList implements MyList {
+public class LinkedMyList<E> implements MyList<E> {
 
     private Node root;
+    private int size;
 
     @Override
-    public void add(int item) {
+    public void add(E item) {
+        size++;
         if(root == null) {
             root = new Node();
             root.setValue(item);
         } else {
-            Node nextNode = new Node();
-            nextNode.setValue(item);
-            root.setNextNode(nextNode);
+            Node parent = root;
+            while (parent.getNextNode() != null) {
+                parent = parent.getNextNode();
+            }
+            Node node = new Node();
+            node.setValue(item);
+            parent.setNextNode(node);
         }
     }
 
     @Override
     public void remove(int index) {
-
+        size--;
+        if(index == 0 && this.root != null) {
+            this.root = this.root.getNextNode();
+        } else {
+            Node parent = root;
+            Node prevNode;
+            int counter = 0;
+            while (parent.getNextNode() != null) {
+                prevNode = parent.getNextNode();
+                parent = parent.getNextNode();
+                counter++;
+                if(counter == index) {
+                    prevNode.setNextNode(parent.getNextNode());
+                    parent.setNextNode(null);
+                }
+            }
+        }
     }
 
     @Override
-    public int get(int index) {
-        return 0;
+    public E get(int index) {
+        if(index == 0 && this.root != null) {
+            return root.getValue();
+        } else {
+            Node parent = root;
+            int counter = 0;
+            while (parent.getNextNode() != null) {
+                parent = parent.getNextNode();
+                counter++;
+                if(counter == index) {
+                    return parent.getValue();
+                }
+            }
+        }
+        throw new IndexOutOfBoundsException();
     }
 
     @Override
-    public void replace(int index, int newValue) {
-
+    public void replace(int index, E newValue) {
+        if(index == 0 && this.root != null) {
+            this.root.setValue(newValue);
+        } else {
+            Node parent = root;
+            int counter = 0;
+            while (parent.getNextNode() != null) {
+                parent = parent.getNextNode();
+                counter++;
+                if(counter == index) {
+                    parent.setValue(newValue);
+                }
+            }
+        }
     }
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
@@ -45,14 +92,14 @@ public class LinkedMyList implements MyList {
 
     private class Node {
 
-        private int value;
+        private E value;
         private Node nextNode;
 
-        public int getValue() {
+        public E getValue() {
             return value;
         }
 
-        public void setValue(int value) {
+        public void setValue(E value) {
             this.value = value;
         }
 

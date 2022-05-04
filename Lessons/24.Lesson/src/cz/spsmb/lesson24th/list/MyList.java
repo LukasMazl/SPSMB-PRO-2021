@@ -1,14 +1,14 @@
 package cz.spsmb.lesson24th.list;
 
-public interface MyList {
+public interface MyList<E> {
 
-    void add(int item);
+    void add(E item);
 
     void remove(int index);
 
-    int get(int index);
+    E get(int index);
 
-    void replace(int index, int newValue);
+    void replace(int index, E newValue);
 
     int size();
 }
