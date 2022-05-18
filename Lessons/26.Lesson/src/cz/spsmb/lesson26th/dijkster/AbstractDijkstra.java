@@ -5,13 +5,14 @@ import java.util.List;
 
 public abstract class AbstractDijkstra {
 
-
     public void run(Node startNode) {
         LinkedList<Node> currentNodes = new LinkedList<>();
         currentNodes.push(startNode);
+        startNode.setValue(0);
         while (!currentNodes.isEmpty()) {
             Node currentNode = currentNodes.pop();
             List<Node> neighbours = findAllNeighbours(currentNode);
+            currentNodes.addAll(neighbours);
             for (Node node : neighbours) {
                 Edge edge = findEdge(node, currentNode);
                 int totalSize = currentNode.getValue() + edge.getValue();
