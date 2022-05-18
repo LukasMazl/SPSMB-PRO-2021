@@ -11,6 +11,8 @@ public class Application {
         integerMyMap.put("ahooj", 5);
         integerMyMap.put("ahoj", 4);
 
+        integerMyMap.hashCode();
+
         System.out.println(integerMyMap);
     }
 }

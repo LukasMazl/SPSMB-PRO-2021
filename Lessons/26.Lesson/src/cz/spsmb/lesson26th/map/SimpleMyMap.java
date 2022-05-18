@@ -15,6 +15,7 @@ public class SimpleMyMap<K, V> implements MyMap<K, V> {
 
     @Override
     public int size() {
+
         return 0;
     }
 
@@ -22,4 +23,5 @@ public class SimpleMyMap<K, V> implements MyMap<K, V> {
     public String toString() {
         return "SimpleMyMap{}";
     }
+
 }
