@@ -1,1 +1,30 @@
+# 6. TEST
 
+- Jaký je rozdíl mezi ArrayList a LinkedList?
+- Jak funguje ArrayList?
+  - Vkládání
+  - Mazání
+  - Vyhledávání
+  - Složitost
+- Jak funguje LinkedList?
+  - Vkládání
+  - Mazání
+  - Vyhledávání
+  - Složitost
+- Co je LIFO a jak funguje?
+- Co je FIFO a jak funguje?
+- Co je Binární strom?
+  - Jaké je možné využití
+  - Jak se liší od Listu
+  - Jakým způsobem se dá sestrojit?
+  - Operace
+      - Odebrání
+      - Přidání
+      - Hledání
+  - Složitost vyhledávání v binary tree X ArrayList X LinkedList
+  - Co je potomek, rodič, kořen a list stromu
+  - Jakým způsobem funguje průchod do šířky a do hloubky
+- HashTable
+  - Jakým způsobem funguje vkládání hodnot do Mapy?
+  - Co je hash? A jaké jsou druhy?
+  - Jaká je složitost vyhledávání v HashTable  
