@@ -21,10 +21,10 @@
       - Odebrání
       - Přidání
       - Hledání
-  - Složitost vyhledávání v binary tree X ArrayList X LinkedList
+  - Složitost vyhledávání v binárním stromu X ArrayList X LinkedList
   - Co je potomek, rodič, kořen a list stromu
   - Jakým způsobem funguje průchod do šířky a do hloubky
 - HashTable
   - Jakým způsobem funguje vkládání hodnot do Mapy?
   - Co je hash? A jaké jsou druhy?
-  - Jaká je složitost vyhledávání v HashTable  
+  - Jaká je složitost vyhledávání/vkládání v HashTable  
