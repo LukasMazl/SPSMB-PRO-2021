@@ -15,7 +15,7 @@
 - Co je FIFO a jak funguje?
 - Co je Binární strom?
   - Jaké je možné využití
-  - Jak se liší od Listu
+  - Jak se liší od Listu (seznamu)
   - Jakým způsobem se dá sestrojit?
   - Operace
       - Odebrání
