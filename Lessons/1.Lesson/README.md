@@ -10,3 +10,8 @@
 - Je na vstupu sudé číslo?
 - Je na vstupu prvočíslo?
 - Vytvořit metodu, která na vstupu má MIN a MAX a musí vrátit náhodné číslo v tomto intervalu
+
+
+## POZN.
+
+Kdo to stihne celé za hodinu, tak má za 1 s váhou 0,2
