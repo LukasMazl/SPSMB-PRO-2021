@@ -4,6 +4,7 @@
  - Vytvoření metody pro výpis pole v jednom řádku
  - Vytvoření metody na výpočet SUM (suma) a AVG (průměr)
 
+POZN: Pridat vice prikladu, kdo to nestihne, tak za DU
 ## Bonusová úloha
 
 Vytvořte metodu, která zašifruje daný string (pole char[]) pomocí Caesarovy šifrovací metody.
